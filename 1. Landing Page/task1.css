@@ -1,1 +1,366 @@
+@font-face {
+    font-family: font-1;
+    src: url(./Font-collection/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayMediu.ttf);
+}
 
+@font-face {
+    font-family: font-2;
+    src: url(./Fonts-collection/NeueHaasDisplayLight.ttf);
+}
+
+@font-face {
+    font-family: font-3;
+    src: url(./Fonts-collection/NeueHaasDisplayRoman.ttf.url);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: font-1;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #EFEAE3;
+}
+
+nav {
+    padding: 4.8vh 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: font-1;
+    font-weight: 100;
+}
+
+nav .part-2 {
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav .part-2 h4 {
+    padding: 1.9vh 1.4vw;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    color: 1px solid rgba(0, 0, 0, 0.563);
+    font-weight: 100;
+}
+
+.page-1 {
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 10vh 2vw;
+}
+
+.page-1 .div-left {
+    font-size: 4vh;
+    font-weight: 600;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: auto;
+    width: 26vw;
+    line-height: 1;
+}
+
+.page-1 .div-right {
+    font-size: 12vh;
+    line-height: 0.8;
+    bottom: 20vh;
+    margin-right: 2.5vw;
+}
+
+.page-1 .div-right h1 {
+    text-align: right;
+}
+
+.page-1 .div-center {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 15vh;
+}
+
+.div-circle {
+    min-height: 80vh;
+    width: 60vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -41vh;
+    right: 0vw;
+}
+
+.circle {
+    height: 65vh;
+    width: 35vw;
+    background-color: #FE330A;
+    border-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+}
+
+.hr-1 {
+    width: 97%;
+    height: 1px;
+    margin: -100px auto;
+    background-color: #33333387;
+}
+
+.page-2 {
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20vh 1vw;
+}
+
+.page-2 video {
+    height: 97%;
+    width: 96%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.page-3 {
+    min-height: auto;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20vh 1vw;
+    white-space: nowrap;
+}
+
+.page-3 p {
+    font-size: 20vh;
+}
+
+.page-3 .div-scrolling {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -22vh;
+    animation-name: move;
+    animation-duration: 13s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.page-3 .div-scrolling p,
+.round-icon {
+    margin: 0 15px;
+}
+
+.page-3 .div-scrolling::-webkit-scrollbar {
+    display: none;
+}
+
+/* @keyframes move {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+} */
+
+.page-4 {
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vh 6.5vw;
+}
+
+.page-4 .div-left {
+    width: 70vw;
+    height: 100vh;
+}
+
+.page-4 .div-left p {
+    line-height: 1.1;
+    font-size: 9.5vh;
+}
+
+.page-4 .div-right {
+    width: 22vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 15px;
+}
+
+.page-4 .div-right img {
+    height: 27%;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 8vh;
+}
+
+.page-4 .div-right p {
+    font-size: 2.45vh;
+}
+
+.page-4 .one-circle {
+    min-height: 50vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: -80vh;
+    right: -27vw;
+    z-index: -999;
+}
+
+.page-4 .one-circle .center-circle {
+    height: 65vh;
+    width: 35vw;
+    background-color: #FE330A;
+    border-radius: 50%;
+    filter: blur(20px);
+}
+
+.page-4-div {
+    height: auto;
+    width: 13vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: -18vh 0 0 3vh;
+}
+
+.page-4-div img {
+    height: 1.4vh;
+}
+
+.page-4-div p {
+    font-size: 2.2vh;
+    color: rgba(0, 0, 0, 0.809);
+}
+
+.page-5 {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.page-5 .div-L {
+    height: 19vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #00000029;
+    padding: 0vh 2.4vw;
+}
+
+.page-5 .div-L h2 {
+    font-size: 7vh;
+}
+
+.page-5 .div-8 h4 {
+    font-size: 2.6vh;
+    font-weight: 100;
+    border-radius: 50px;
+    padding: 1vh 2vw;
+    margin-top: 7vh;
+    border: 1px solid #00000029;
+    color: rgb(53, 52, 52);
+}
+
+.page-5 .div-L h4 span {
+    margin: 0 0.5vw;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 0.6vh 0.6vw;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.page-6 {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    background-color: black;
+    margin: 20vh 2.4vw;
+    border-radius: 22px;
+}
+
+.page-6 .div-left {
+    width: 50vw;
+    height: 100vh;
+    padding: 20vh 0 0 10vw;
+}
+
+.page-6 .div-left div {
+    padding-left: 20px;
+    border-left: 4px solid grey;
+}
+
+.page-6 .div-left #no-2 h2 {
+    color: grey;
+}
+
+.page-6 .div-left #no-3 h2 {
+    color: grey;
+}
+
+.page-6 .div-left #no-1 {
+    border-left: 4px solid red;
+}
+
+.page-6 .div-left h2 {
+    line-height: 1;
+    font-size: 9.5vh;
+    color: #EFEAE3;
+}
+
+.page-6 .div-left p {
+    font-size: 2.2vh;
+    color: #EFEAE3;
+    margin-top: 30px;
+}
+
+.page-6 .div-right {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-right: 15px;
+}
+
+.page-6 .div-right img {
+    height: 100%;
+    width: 80%;
+    border-radius: 30px;
+    margin-bottom: 8vh;
+}
